@@ -21,7 +21,11 @@ exports.glyphChange = function(req, res) { 
   var curMoment = models.Moments.find({ _id : momentID });
 
   // see if it has an empty heart or not
-  console.log(curMoment);
+  if(curMoment['heart'] = ''){
+    curMoment.update({'heart': '-empty'});
+  } else {
+    curMoment.update({'heart': ''});
+  }
 
 
   function saveIcon(err, moments) {
