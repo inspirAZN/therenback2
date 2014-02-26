@@ -9,6 +9,7 @@ exports.view = function(req, res){
     .exec(renderMoments);
 
   function renderMoments(err, moments){
+    res.location('../');
     res.render('moments', {'moments': moments });
   }
 };
