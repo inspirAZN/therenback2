@@ -33,7 +33,6 @@ function initializePage() {
 			// get the span to change the glyph
 			var toChange = $("#moments"+idNumber+" a");
 			
-			// add the content to the DIV
 			if(toChange.hasClass("glyphicon-heart")){
 				toChange.removeClass("glyphicon-heart").addClass("glyphicon-heart-empty");
 			} else if(toChange.hasClass("glyphicon-heart-empty")){

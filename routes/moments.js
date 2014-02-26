@@ -30,15 +30,13 @@ exports.glyphChange = function(req, res) { 
 
   curMoment.update({heart: newGlyph}, saveIcon);
 
-
-
   function saveIcon(err, moments) {
     if(err) {
       console.log(err);
       res.send(500);
     }
-
-    res.redirect('/moments');
+    
+    // res.redirect('/moments');
     res.send();
   }
 }
