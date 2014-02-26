@@ -25,7 +25,7 @@ function initializePage() {
 		// How to respond to the GET request
 		// function changeIcon(moments_json) {
 			// get the span to change the glyph
-			var toChange = $(".heartoverlay #moments"+idNumber).find("span");
+			var toChange = $(".heartoverlay #moments"+idNumber+" a");
 
 			// console.log(toChange);
 			// console.log(toChange.css());
