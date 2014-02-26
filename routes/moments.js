@@ -28,7 +28,7 @@ exports.glyphChange = function(req, res) { 
   // call the following callback
   var curMoment = models.Moments.find({ $and: [{_id : momentID },{heart: momentGlyph}] });
 
-  curMoment.update( $set: {heart: newGlyph}, saveIcon);
+  curMoment.update({heart: newGlyph}, saveIcon);
 
   function saveIcon(err, moments) {
     if(err) {

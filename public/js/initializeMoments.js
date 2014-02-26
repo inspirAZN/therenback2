@@ -40,8 +40,8 @@ function initializePage() {
 			}
 		}
 
-		// issue the GET request
-		$.get(url_call, changeIcon);
+		// issue the post request
+		$.post(url_call, changeIcon);
 
 	});
 }
