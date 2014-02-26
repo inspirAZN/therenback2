@@ -16,17 +16,20 @@ exports.view = function(req, res){
 exports.glyphChange = function(req, res) { 
   var momentID = req.params.id;
   var momentGlyph = req.params.glyph;
+  var newGlyph;
   
+  if(momentGlyph == "-empty"){
+    newGlyph = "";
+  } else {
+    newGlyph = "-empty";
+  }
+
   // query for the specific project and
   // call the following callback
-  var curMoment = models.Moments.find({ _id : momentID });
+  var curMoment = models.Moments.find({ $and: [{_id : momentID },{heart: momentGlyph}] });
 
-  // see if it has an empty heart or not
-  if(momentGlyph == "-empty"){
-    curMoment.update({heart: ""}, saveIcon);
-  } else {
-    curMoment.update({heart: "-empty"}, saveIcon);
-  }
+  curMoment.update({heart: newGlyph}, saveIcon);
+
 
 
   function saveIcon(err, moments) {
