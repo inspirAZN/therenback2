@@ -18,7 +18,6 @@ function initializePage() {
 		// get rid of 'project' from the front of the id 'project3'
 		var idNumber = momentID.substr('moments'.length);
 
-		alert(idNumber);
 
 		// this is the URL we'll call
 		var url_call = '/moments/'+idNumber;
