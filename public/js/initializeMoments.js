@@ -41,7 +41,7 @@ function initializePage() {
 		}
 
 		// issue the post request
-		$.post(url_call, changeIcon);
+		$.get(url_call, changeIcon);
 
 	});
 }

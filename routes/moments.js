@@ -36,7 +36,7 @@ exports.glyphChange = function(req, res) { 
       res.send(500);
     }
 
-    res.redirect('/moments');
+    // res.redirect('/moments');
     res.send();
   }
 }
