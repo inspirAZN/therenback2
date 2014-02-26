@@ -91,7 +91,7 @@ app.get('/filler', function(req, res) {
 // json/ handlebars routes
 
 app.get('/moments', moments.view);
-app.get('/moments/:id', moments.glyphChange);
+app.get('/moments/:id/:glyph', moments.glyphChange);
 app.get('/mymoments', mymoments.view);
 // app.get('/favorites', favorites.view);
 

@@ -22,10 +22,9 @@ function initializePage() {
 		var aclass = $("#moments"+idNumber+" a").attr('class');
 
 		var glyph = aclass.substr('alizarin glyphicon glyphicon-heart'.length);
-		alert(glyph);
 
 		// this is the URL we'll call
-		var url_call = '/moments/'+idNumber;
+		var url_call = '/moments/'+idNumber+'/'+glyph;
 
 		// How to respond to the GET request
 		function changeIcon(moments_json) {
