@@ -20,9 +20,8 @@ function initializePage() {
 		
 		// get the class for the link
 		var aclass = $("#moments"+idNumber+" a").attr('class');
-		alert(aclass);
 
-		var glyph = aclass.substr('alizarin glyphicon glyphicon-heart');
+		var glyph = aclass.substr('alizarin glyphicon glyphicon-heart'.length);
 		alert(glyph);
 
 		// this is the URL we'll call
