@@ -134,17 +134,14 @@ label {
     max-width: 275px;
     margin: auto;
 }
-.moments img:hover {
+/*.moments img:hover {
     -moz-transform:  scale(1.05);
-    /*-moz-transition-timing-function: ease-in;*/
     -moz-transition-duration: 200ms;
     -webkit-transform:  scale(1.05);
-    /*-webkit-transition-timing-function: ease-in;*/
     -webkit-transition-duration: 200ms;
     transform: scale(1.05);
-    /*transition-timing-function: ease-in;*/
     transition-duration: 200ms;
-}
+}*/
 .moments h1 {
     margin-top: 30px;
     margin-bottom: 7px;
