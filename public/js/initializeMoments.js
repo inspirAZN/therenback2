@@ -17,7 +17,13 @@ function initializePage() {
 		var momentID = $(this).closest('.heartoverlay').attr('id');
 		// get rid of 'project' from the front of the id 'project3'
 		var idNumber = momentID.substr('moments'.length);
+		
+		// get the class for the link
+		var aclass = $("#moments"+idNumber+" a").attr('class');
+		alert(aclass);
 
+		var glyph = aclass.substr('alizarin glyphicon glyphicon-heart');
+		alert(glyph);
 
 		// this is the URL we'll call
 		var url_call = '/moments/'+idNumber;
