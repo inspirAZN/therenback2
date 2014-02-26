@@ -1,14 +1,21 @@
 var data = require('../moments.json');
-var models = require('../models.js');
+// var models = require('../models.js');
 
 exports.view = function(req, res){
-  console.log(data);
-  res.render('moments');
+  var momentsID = req.params.id;
+
+  models.Moments
+    .find()
+    .exec(renderMoments);
+
+  function renderMoments(err, moments){
+    res.render('moments', {'moments': moments });
+  }
 };
 
-exports.view = function(req, res){
-  res.render('moments', data);
-};
+// exports.view = function(req, res){
+//   res.render('moments', data);
+// };
 
 exports.glyphChange= function(req, res) { 
   var momentID = req.params.id;
