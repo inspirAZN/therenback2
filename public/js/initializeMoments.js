@@ -23,12 +23,12 @@ function initializePage() {
 		var url_call = '/moments/'+idNumber;
 
 		// How to respond to the GET request
-		function changeIcon(moments_json) {
+		// function changeIcon(moments_json) {
 			// get the span to change the glyph
 			var toChange = $(".heartoverlay #moments"+idNumber).find("span");
 
-			console.log(toChange);
-			console.log(toChange.css());
+			// console.log(toChange);
+			// console.log(toChange.css());
 			
 			// add the content to the DIV
 			if(toChange.hasClass("glyphicon-heart")){
@@ -37,10 +37,13 @@ function initializePage() {
 				toChange.removeClass("glyphicon-heart-empty").addClass("glyphicon-heart");
 			}
 
-		}
+		// }
 
 		// issue the GET request
-		$.get(url_call, changeIcon);
+		// $.get(url_call, changeIcon);
+		$.get(url_call);
+
+
 	});
 
 	$('#newProjectSubmitButton').click(function(e) {
