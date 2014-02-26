@@ -19,7 +19,7 @@ exports.glyphChange= function(req, res) { 
   
   // query for the specific project and
   // call the following callback
-  var curMoment = models.Moments.find({ id : momentID });
+  var curMoment = models.Moments.find({ _id : momentID });
 
   function afterQuery(err, moments) {
     if(err) console.log(err);
