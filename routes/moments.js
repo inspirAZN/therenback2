@@ -20,6 +20,8 @@ exports.glyphChange = function(req, res) { 
   // call the following callback
   var curMoment = models.Moments.find({ _id : momentID });
 
+  console.log(curMoment["heart"]);
+
   // see if it has an empty heart or not
   if(curMoment['heart'] = ""){
     curMoment.update({"heart": "-empty"}, saveIcon);
@@ -33,6 +35,7 @@ exports.glyphChange = function(req, res) { 
       console.log(err);
       res.send(500);
     }
+    console.log(curMoment);
     res.redirect('/moments');
     res.send();
   }
