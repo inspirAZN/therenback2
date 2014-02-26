@@ -2,25 +2,25 @@
 	"moments": [
 		{
 			"location": "San Francisco",
-			"imgsrc": "/images/cover/sanfrancisco.jpeg", 
+			"imgsrc": "/cover/sanfrancisco.jpeg", 
 			"numPhotos": 9,
 			"heart": "-empty"
 		},
 		{
 			"location": "Rome",
-			"imgsrc": "/images/cover/rome.jpeg", 
+			"imgsrc": "/cover/rome.jpeg", 
 			"numPhotos": 5,
 			"heart": "-empty"
 		},
 		{
 			"location": "London",
-			"imgsrc": "/images/cover/london.jpeg", 
+			"imgsrc": "/cover/london.jpeg", 
 			"numPhotos": 7,
 			"heart": ""
 		},
 		{
 			"location": "Sydney",
-			"imgsrc": "/images/cover/sydney.jpeg", 
+			"imgsrc": "/cover/sydney.jpeg", 
 			"numPhotos": 3,
 			"heart": "-empty"
 		}
