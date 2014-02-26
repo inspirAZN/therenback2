@@ -14,7 +14,7 @@ exports.view = function(req, res){
 };
 
 
-exports.glyphChange= function(req, res) { 
+exports.glyphChange = function(req, res) { 
   var momentID = req.params.id;
   
   // query for the specific project and

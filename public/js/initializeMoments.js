@@ -18,6 +18,8 @@ function initializePage() {
 		// get rid of 'project' from the front of the id 'project3'
 		var idNumber = momentID.substr('moments'.length);
 
+		alert(idNumber);
+
 		// this is the URL we'll call
 		var url_call = '/moments/'+idNumber;
 
@@ -25,6 +27,9 @@ function initializePage() {
 		function changeIcon() {
 			// get the span to change the glyph
 			var toChange = $(".heartoverlay #moments"+idNumber).find("span");
+
+			alert(toChange);
+
 			// add the content to the DIV
 			if(toChange.hasClass("glyphicon-heart")){
 				toChange.removeClass("glyphicon-heart").addClass("glyphicon-heart-empty");
