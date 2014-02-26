@@ -26,6 +26,8 @@ function initializePage() {
 		// this is the URL we'll call
 		var url_call = '/moments/'+idNumber+'/'+glyph;
 
+		alert(url_call);
+
 		// How to respond to the GET request
 		function changeIcon(moments_json) {
 			// get the span to change the glyph
