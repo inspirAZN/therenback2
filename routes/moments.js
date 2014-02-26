@@ -1,4 +1,3 @@
-// var data = require('../moments.json');
 var models = require('../models.js');
 
 exports.view = function(req, res){
@@ -21,9 +20,16 @@ exports.glyphChange = function(req, res) { 
   // call the following callback
   var curMoment = models.Moments.find({ _id : momentID });
 
+  // see if it has an empty heart or not
+  console.log(curMoment);
 
-  function afterQuery(err, moments) {
-    if(err) console.log(err);
+
+  function saveIcon(err, moments) {
+    if(err) {
+      console.log(err);
+      res.send(500);
+    }
+    res.redirect('/moments');
     res.send();
   }
 }
