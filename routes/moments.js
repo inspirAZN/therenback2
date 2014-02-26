@@ -9,14 +9,10 @@ exports.view = function(req, res){
     .exec(renderMoments);
 
   function renderMoments(err, moments){
-    res.location('../');
     res.render('moments', {'moments': moments });
   }
 };
 
-// exports.view = function(req, res){
-//   res.render('moments', data);
-// };
 
 exports.glyphChange= function(req, res) { 
   var momentID = req.params.id;
