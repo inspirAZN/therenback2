@@ -22,9 +22,9 @@ exports.glyphChange = function(req, res) { 
 
   // see if it has an empty heart or not
   if(curMoment['heart'] = "-empty"){
-    curMoment.update({"heart": ""}, saveIcon);
+    curMoment.update({heart: ""}, saveIcon);
   } else {
-    curMoment.update({'heart': "-empty"}, saveIcon);
+    curMoment.update({heart: "-empty"}, saveIcon);
   }
 
 
