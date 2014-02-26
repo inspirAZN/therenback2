@@ -33,15 +33,10 @@ function initializePage() {
 			} else if(toChange.hasClass("glyphicon-heart-empty")){
 				toChange.removeClass("glyphicon-heart-empty").addClass("glyphicon-heart");
 			}
-
-			alert(toChange);
 		}
 
 		// issue the GET request
 		$.get(url_call, changeIcon);
-		// $.get(url_call, function() {
-		// 	window.location.href = '/moments'; //reload the page
-		// });
 
 	});
 }
