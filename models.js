@@ -8,7 +8,6 @@ var MomentsSchema = new Mongoose.Schema({
   "imgsrc": String,
   "numPhotos": Number,
   "heart": String
-
 });
 exports.Moments = Mongoose.model('Moments', MomentsSchema);
 
@@ -19,7 +18,6 @@ var myMomentsSchema = new Mongoose.Schema({
   "imgsrc": String,
   "numPhotos": Number,
   "heart": String
-
 });
 exports.myMoments = Mongoose.model('myMoments', myMomentsSchema);
 
