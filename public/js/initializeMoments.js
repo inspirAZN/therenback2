@@ -23,12 +23,10 @@ function initializePage() {
 		var url_call = '/moments/'+idNumber;
 
 		// How to respond to the GET request
-		function changeIcon() {
+		function changeIcon(moments_json) {
 			// get the span to change the glyph
 			var toChange = $(".heartoverlay #moments"+idNumber).find("span");
-
-			alert(toChange);
-
+			
 			// add the content to the DIV
 			if(toChange.hasClass("glyphicon-heart")){
 				toChange.removeClass("glyphicon-heart").addClass("glyphicon-heart-empty");
