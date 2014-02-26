@@ -24,7 +24,7 @@ exports.glyphChange = function(req, res) { 
 
   function afterQuery(err, moments) {
     if(err) console.log(err);
-    res.json(moments[0]);
+    res.send();
   }
 }
 
