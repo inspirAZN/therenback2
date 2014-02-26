@@ -91,7 +91,22 @@
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery-2.0.3.js"></script>
-<script src="js/initializeMoments.js"></script>
+<!-- <script src="js/initializeMoments.js"></script> -->
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        $('.heartoverlay a').click(function(e) {
+            var toChange = $(".heartoverlay #moments"+idNumber+" a");
+
+            if(toChange.hasClass("glyphicon-heart")){
+                toChange.removeClass("glyphicon-heart").addClass("glyphicon-heart-empty");
+            } else if(toChange.hasClass("glyphicon-heart-empty")){
+                toChange.removeClass("glyphicon-heart-empty").addClass("glyphicon-heart");
+            }
+        });
+        
+    });
+</script>
 
 </body>
 </html>
