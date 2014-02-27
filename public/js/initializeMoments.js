@@ -32,9 +32,9 @@ function initializePage() {
 			var toChange = $("#moments"+idNumber+" a");
 
 			var curIcon = moments_json["heart"];
-			alery(curIcon);
+			alert(curIcon);
 
-			
+
 			if(toChange.hasClass("glyphicon-heart")){
 				toChange.removeClass("glyphicon-heart").addClass("glyphicon-heart-empty");
 			} else if(toChange.hasClass("glyphicon-heart-empty")){
