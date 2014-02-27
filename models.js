@@ -1,9 +1,11 @@
 var Mongoose = require('mongoose');
 
+// var UserSchema = new Mongoose.Schema({
+
+// })
 
 var MomentsSchema = new Mongoose.Schema({
   // fields are defined here
-  "id": Number,
   "location": String,
   "imgsrc": String,
   "numPhotos": Number,
@@ -13,7 +15,6 @@ exports.Moments = Mongoose.model('Moments', MomentsSchema);
 
 var myMomentsSchema = new Mongoose.Schema({
   // fields are defined here
-  "id": Number,
   "location": String,
   "imgsrc": String,
   "numPhotos": Number,
@@ -23,7 +24,6 @@ exports.myMoments = Mongoose.model('myMoments', myMomentsSchema);
 
 var FavoritesSchema = new Mongoose.Schema({
   // fields are defined here
-  "id": Number,
   "location": String,
   "imgsrc": String,
   "numPhotos": Number,
