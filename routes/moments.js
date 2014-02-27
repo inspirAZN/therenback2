@@ -26,7 +26,7 @@ exports.glyphChange = function(req, res) { 
 
   // query for the specific project and
   // call the following callback
-  var curMoment = models.Moments.find({ $and: [{_id : momentID },{heart: momentGlyph}] });
+  var curMoment = models.Moments.find({_id : momentID });
 
   curMoment.update({heart: newGlyph}, saveIcon);
 
