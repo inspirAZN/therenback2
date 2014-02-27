@@ -17,6 +17,8 @@ exports.glyphChange = function(req, res) { 
   var momentID = req.params.id;
   var momentGlyph = req.params.glyph;
   var newGlyph;
+
+  console.log(momentID);
   
   if(momentGlyph == "-empty"){
     newGlyph = "";
