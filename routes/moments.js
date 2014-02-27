@@ -28,6 +28,7 @@ exports.glyphChange = function(req, res) { 
   // call the following callback
   var curMoment = models.Moments.find({_id : momentID });
 
+  console.log(curMoment);
   curMoment.update({heart: newGlyph}, saveIcon);
 
   function saveIcon(err, moments) {
