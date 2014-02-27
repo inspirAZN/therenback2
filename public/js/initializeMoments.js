@@ -26,12 +26,14 @@ function initializePage() {
 		// this is the URL we'll call
 		var url_call = '/moments/'+idNumber+'/'+glyph;
 
-		alert(url_call);
-
 		// How to respond to the GET request
 		function changeIcon(moments_json) {
 			// get the span to change the glyph
 			var toChange = $("#moments"+idNumber+" a");
+
+			var curIcon = moments_json["heart"];
+			alery(curIcon);
+
 			
 			if(toChange.hasClass("glyphicon-heart")){
 				toChange.removeClass("glyphicon-heart").addClass("glyphicon-heart-empty");
