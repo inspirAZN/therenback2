@@ -1,8 +1,11 @@
 var Mongoose = require('mongoose');
 
-// var UserSchema = new Mongoose.Schema({
-
-// })
+var UserSchema = new Mongoose.Schema({
+  "name": String,
+  "email": String,
+  "password": String
+})
+exports.User = Mongoose.model('User', UserSchema);
 
 var MomentsSchema = new Mongoose.Schema({
   // fields are defined here
