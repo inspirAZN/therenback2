@@ -1,11 +1,11 @@
-var data = require('../mymoments.json');
 var models = require('../models.js');
 
 exports.view = function(req, res){
-  console.log(data);
-  res.render('mymoments');
-};
+  models.myMoments
+    .find()
+    .exec(renderMyMoments);
 
-exports.view = function(req, res){
-  res.render('mymoments', data);
+  function renderMyMoments(err, mymoments){
+    res.render('mymoments', {'mymoments': mymoments });
+  }
 };

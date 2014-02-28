@@ -98,7 +98,7 @@ app.get('/moments/:id/', moments.glyphChange);
 app.get('/mymoments', mymoments.view);
 app.get('/newuser', newuser.view);
 app.post('/newuser/new', newuser.addUser);
-app.get('/favorites', favorites.view);
+// app.get('/favorites', favorites.view);
 
 // app.get('/project/:id', project.projectInfo);
 // app.post('/project/new', project.addProject);
