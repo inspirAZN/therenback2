@@ -28,9 +28,8 @@ exports.myMoments = Mongoose.model('myMoments', myMomentsSchema);
 var FavoritesSchema = new Mongoose.Schema({
   // fields are defined here
   "location": String,
-  "imgsrc": String,
-  "numPhotos": Number,
-  "heart": String
+  "rank": Number
+  "url": String
 });
 exports.Favorites = Mongoose.model('Favorites', FavoritesSchema);
 

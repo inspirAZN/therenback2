@@ -1,8 +1,6 @@
 var models = require('../models.js');
 
 exports.view = function(req, res){
-  var momentsID = req.params.id;
-
   models.Moments
     .find()
     .exec(renderMoments);

@@ -1,11 +1,12 @@
-var data = require('../favorites.json');
 var models = require('../models.js');
 
 exports.view = function(req, res){
-  console.log(data);
-  res.render('favorites');
-};
+  models.Favorites
+  	.find()
+  	.sort('rank')
+  	.exec(renderFavorites);
 
-exports.view = function(req, res){
-  res.render('favorites', data);
+  function renderFavorites(err, favorites){
+  	res.render('favorites', {'favorites': favorites});
+  }
 };

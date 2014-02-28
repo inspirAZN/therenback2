@@ -1,0 +1,24 @@
+{	
+	"favorites": [
+		{
+			"location": "Tokyo",
+			"rank": 1,
+			"url": "/tokyo.html"
+		},
+		{
+			"location": "New York",
+			"rank": 3,
+			"url": "/newyork.html"
+		},
+		{
+			"location": "Venice",
+			"rank": 4,
+			"url": "/venice.html"
+		},
+		{
+			"location": "Rome",
+			"rank": 2,
+			"url": "/rome.html"
+		},
+	]
+}
