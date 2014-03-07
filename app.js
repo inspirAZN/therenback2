@@ -23,10 +23,10 @@ var mymoments = require('./routes/mymoments');
 
 // Connect to the Mongo database, whether locally or on Heroku
 // MAKE SURE TO CHANGE THE NAME FROM 'lab7' TO ... IN OTHER PROJECTS
-var local_database_name = 'therenback';
-var local_database_uri  = 'mongodb://localhost/' + local_database_name
-var database_uri = process.env.MONGOLAB_URI || local_database_uri
-mongoose.connect(database_uri);
+// var local_database_name = 'therenback';
+// var local_database_uri  = 'mongodb://localhost/' + local_database_name
+// var database_uri = process.env.MONGOLAB_URI || local_database_uri
+mongoose.connect("mongodb://heroku_app22404167:2r08kaon180v7mdobrdc441ukc@ds033069.mongolab.com:33069/heroku_app22404167");
 
 var app = express();
 
@@ -93,7 +93,7 @@ app.get('/filler', function(req, res) {
 // json/ handlebars routes
 
 app.get('/moments', moments.view);
-app.get('/moments/:id/:glyph', moments.glyphChange);
+app.put('/moments/:id/:glyph', moments.glyphChange);
 app.get('/moments/:id/', moments.glyphChange);
 app.get('/mymoments', mymoments.view);
 // app.get('/newuser', newuser.view);
