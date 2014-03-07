@@ -11,8 +11,8 @@ var mongoose = require('mongoose');
 
 var moments = require('./routes/moments');
 var mymoments = require('./routes/mymoments');
-var newuser = require('./routes/newuser');
-var favorites = require('./routes/favorites');
+// var newuser = require('./routes/newuser');
+// var favorites = require('./routes/favorites');
 
 // var project = require('./routes/project');
 
@@ -96,8 +96,8 @@ app.get('/moments', moments.view);
 app.get('/moments/:id/:glyph', moments.glyphChange);
 app.get('/moments/:id/', moments.glyphChange);
 app.get('/mymoments', mymoments.view);
-app.get('/newuser', newuser.view);
-app.post('/newuser/new', newuser.addUser);
+// app.get('/newuser', newuser.view);
+// app.post('/newuser/new', newuser.addUser);
 // app.get('/favorites', favorites.view);
 
 // app.get('/project/:id', project.projectInfo);
