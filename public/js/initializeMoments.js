@@ -39,7 +39,7 @@ function initializePage() {
 		}
 
 		// issue the post request
-		$.get(url_call, changeIcon);
+		$.put(url_call, changeIcon);
 
 	});
 }
