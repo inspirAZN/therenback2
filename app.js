@@ -93,7 +93,7 @@ app.get('/filler', function(req, res) {
 // json/ handlebars routes
 
 app.get('/moments', moments.view);
-app.put('/moments/:id/:glyph', moments.glyphChange);
+// app.put('/moments/:id/:glyph', moments.glyphChange);
 app.get('/moments/:id/', moments.glyphChange);
 app.get('/mymoments', mymoments.view);
 // app.get('/newuser', newuser.view);
